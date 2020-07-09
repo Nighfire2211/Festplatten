@@ -1,0 +1,26 @@
+<html>
+    <meta charset="utf-8">
+    <head>
+        <title>Festplatte Löschen</title>
+    </head>
+	<body>
+        <h1>Festplatte löschen</h1>
+        <p>Löschen Sie die Festplatte mit folgender ID: </p>
+			<script type="text/javascript">
+				function conf(){
+				check = window.confirm("Wollen sie diesen Kunden wirklich löschen?");
+				return check;
+				}
+			//-->
+			</script>
+		<form action="loeschen.php" method="POST" onSubmit="return conf()">
+		<table>
+			<tr><td>ID:</td>
+				<td><input name="ID" type="text" size="2"></td></tr>
+			
+			<tr><td><input type="submit" value="Abschicken"></td> 
+            <td><input type="reset" value="Zurücksetzen"></td></tr>
+		</table>
+        </form>
+    </body>
+</html>
